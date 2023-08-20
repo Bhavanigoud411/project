@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>complete responsive website by using Bootstrap 5</title>
+              <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+              <link rel="stylesheet" type="text/css" href="style.css">
+              <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+              <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet"  type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+              <!---- navbar-->
+              <header id="Home">
+              <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 border-bottom fixed-top">
+                            <div class="container-fluid">
+                              <a class="navbar-brand fs-2" href="#">Techno-<span class="text-primary">Web</span></a>
+                              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                              </button>
+                              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
+                                  <li class="nav-item">
+                                    <a class="nav-link active text-primary" aria-current="page" href="#">Home</a>
+                                  </li>
+                                   <li class="nav-item">
+                                 
+                                    <a class="nav-link" href="#About">About </a>
+                                  </li>
+                                  <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#Home" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      Our Courses
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <li><a class="dropdown-item" href="#Our Courses">Front-End Programming Languages </a></li>
+                                      <li><a class="dropdown-item" href="#Our Courses">Back-End progamming Languages</a></li>
+                                      <li><a class="dropdown-item" href="#Our Courses">Data Bases</a></li>
+
+
+                                      <li><hr class="dropdown-divider"></li>
+                                      </ul>
+                                    <li class="nav-item">
+                                          <a class="nav-link" href="#Our Team">Our Team</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link" href="#Contact Us">Contact Us</a>
+                                        </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </nav>
+                          <!-------Carousel-->
+                          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="https://spectrum.ieee.org/media-library/image.jpg?id=25587918" class="d-block w-100" alt="...">
+                                <div class="carousel-caption  d-md-block">
+                                  <h5>WELCOME TO TECHNO-WEB</h5>
+                                  <p>“Whether you want to uncover the secrets of the universe, or you just want to pursue a career in the 21st century, basic computer programming is an essential skill to learn.”
+
+                                          - Stephen Hawking</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://t4.ftcdn.net/jpg/02/83/46/33/360_F_283463385_mfnrx6RPU3BqObhVuVjYZjeZ5pegE7xq.jpg"class="d-block w-100" alt="...">
+                                <div class="carousel-caption  d-md-block">
+                                  <h5>YOUR FUTURE IS OUR PRIORITY</h5>
+                                  <p>“I taught myself how to program computers when I was a kid, bought my first computer when I was 10, and sold my first commercial program when I was 12.”
+
+                                          - Elon Musk.</p>
+                                </div>
+                              </div>
+                              <div class="carousel-item">
+                                <img src="https://plus.unsplash.com/premium_photo-1661877737564-3dfd7282efcb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHByb2dyYW1taW5nfGVufDB8fDB8fA%3D%3D&w=1000&q=80" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-md-block">
+                                  <h5>BELIVE IN US,TO MAKE YOUR FUTURE BETTER</h5>
+                                  <p>“Everybody should learn to program a computer, because it teaches you how to think.”
+
+                                          - Steve Jobs</p>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>  
+              </header>
+              <section class="About  my-5" id="About">
+                            <div class="container  ">
+                             <div class="text-center my-5">
+                                 <h1 data-aos="fade-up" data-fade-offset="200">About <span class="text-primary">Us</span> </h1>
+                                 <hr  class="w-25 m-auto">         
+                             </div> 
+                             <div class="row" >
+                             <div class="col-sm-12 col-md-6 col-lg-6 col-12" data-aos="zoom-in" data-fade-offset="200">
+                              <h1>What do you  <span class="text-primary"> want to know?</span></h1>
+                              <p class="p-2">Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services. </p>
+                              <button type="button" class="btn btn-light mb-5">More about me</button>
+                              <div class="accordion" id="accordionExample" data-aos="zoom-in-left" data-fade-offset="200">
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                      About Our Team
+                                    </button>
+                                  </h2>
+                                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <p>We deliver measurable results. Through an international team of senior, certified practitioners using a consistent methodology and best-practice-based toolset, our intellectual capital, implementation and consulting / coaching expertise, we accelerate the time to sustainable benefits realization.
+
+                                        Our team knowledge center is unique and unsurpassed. 
+                                        
+                                        
+                                      </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                      Who We Are
+
+                                    </button>
+                                  </h2>
+                                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <p>TECHNO-WEB is a global professional services firm with a clear purpose: to help our clients create and maintain high-performing teams and organizations. TCI was the first team diagnostic on the market and has existed for nearly a decade. With the data from thousands of teams, we have the formula for success.
+
+                                        We focus on teams and team leaders. We know organizations must center their attention here in order to achieve improved results under relentless pressure to do more with less. In today’s organization that is where the leverage is…
+                                        
+                                        We know teams. </p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-item">
+                                  <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                      What We Can Do For You
+                                    </button>
+                                  </h2>
+                                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                      <p>Team Leader Effectiveness: We work one-on-one with individuals or team leaders to improve performance. This is a logical application for the Team Leader View™.
+                                         <br>Benchmarking: Ability to provide best practices insight, training, and support based on data from thousands of teams.
+                                        </p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                             </div>
+                             <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-end" data-aos="fade-right" data-fade-offset="200">Abou>
+                              <img src="https://images01.nicepagecdn.com/page/12/67/wordpress-theme-preview-126794.jpg" class="img-fluid img-thumbnail">
+                             </div>
+                             </div>            
+                            </div>
+              </section>
+              <section class="Our Courses py-5 bg-light"id="Our Courses">
+                <div class="container  ">
+                  <div class="text-center my-5">
+                      <h1>Our <span class="text-primary">Courses</span> </h1>
+                      <hr  class="w-25 m-auto">         
+                  </div>
+                  <div class="row" data-aos="zoom-in-up" data-fade-offset="200">
+                  <div class="col-sm-12 col-md-4 col-lg-4" >
+                    <div class="card">
+                      <div class="card-body">
+                        <img src="https://img.freepik.com/free-icon/css_318-698167.jpg " class="img-fluid img-thumbnail w-50">
+                        <h5 class="card-title">CSS</h5>
+                       
+                        <p class="card-text">CSS is the language we use to style an HTML document. CSS describes how HTML elements should be displayed. This tutorial will teach you CSS from basic to ...
+                          </p>
+                        <h3>RS 9999/-<div class="text-danger"><P>50%OFF</P></div></h3>
+                        
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                      </div>
+                  </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-4" >
+                      <div class="card">
+                        <div class="card-body">
+                          <img src="https://imagedelivery.net/5MYSbk45M80qAwecrlKzdQ/38a9cafe-c53e-47f2-f431-428120462000/public" class="img-fluid img-thumbnail w-50">
+                          <h5 class="card-title">JAVASCRIPT</h5>
+                          <p class="card-text">JavaScript is the programming language of the Web. JavaScript is easy to learn. This tutorial will teach you JavaScript from basic to advanced.
+                          </p>
+                          <h3>RS 11999/-<div class="text-danger"><P>30%OFF</P></div></h3>
+                        
+                          <a href="#" class="btn btn-primary">Buy Now</a>
+                        </div>
+                    </div>
+                      </div>
+                      <div class="col-sm-12 col-md-4 col-lg-4" >
+                        <div class="card">
+                          <div class="card-body">
+                            <img src="https://play-lh.googleusercontent.com/RslBy1o2NEBYUdRjQtUqLbN-ZM2hpks1mHPMiHMrpAuLqxeBPcFSAjo65nQHbTA53YYn" class="img-fluid img-thumbnail w-50">
+                            <h5 class="card-title">HTML</h5>
+                            <p class="card-text">The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the meaning and ...
+                            </p>
+                            <h3>RS 7999/-<div class="text-danger"><P>50%OFF</P></div></h3>
+                        
+                            <a href="#" class="btn btn-primary">Buy Now</a>
+                          </div>
+                      </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4" >
+                          <div class="card">
+                            <div class="card-body">
+                              <img src="https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/3067767/settings_images/omx3KZGSamzipD0jXUwg_file.jpg" class="img-fluid img-thumbnail w-50">
+                              <h5 class="card-title">BOOTSTRAP</h5>
+                              <p class="card-text">Bootstrap utilizes Sass for a modular and customizable architecture. Import only the components you need, enable global options like gradients and shadows, and ...
+                                </p>
+                                <h3>RS 9999/-<div class="text-danger"><P>15%OFF</P></div></h3>
+                        
+                          <a href="#" class="btn btn-primary">Buy Now</a>
+                            </div>
+                        </div>
+                          </div>
+                          <div class="col-sm-12 col-md-4 col-lg-4" >
+                            <div class="card">
+                              <div class="card-body">
+                                <img src="data:image/png;base64,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" class="img-fluid img-thumbnail w-50">
+                                <h5 class="card-title">PHP</h5>
+                                <p class="card-text">A popular general-purpose scripting language that is especially suited to web development. Fast, flexible and pragmatic, PHP powers everything from your blog to ...</p>
+                                <h3>RS 9999/-<div class="text-danger"><P>10%OFF</P></div></h3>
+                        
+                                <a href="#" class="btn btn-primary">Buy Now</a>
+                              </div>
+                          </div>
+                            </div>
+                            <div class="col-sm-12 col-md-4 col-lg-4" >
+                              <div class="card">
+                                <div class="card-body">
+                                  <img src="https://techvccloud.mediacdn.vn/2020/7/13/137-1594616701190893786687-crop-15946167118531494150206.png" class="img-fluid img-thumbnail w-50">
+                                  <h5 class="card-title">REACT</h5>
+                                  <p class="card-text">React is a community. It's a place where you can ask for help, find opportunities, and meet new friends. You will meet both developers and designers, beginners ...
+                                    </p>
+                                    <h3>RS 12999/-<div class="text-danger"><P>5%OFF</P></div></h3>
+                        
+                                  <a href="#" class="btn btn-primary">Buy Now</a>
+                                </div>
+                            </div>
+                              </div>
+                              
+                              <div class="col-sm-12 col-md-4 col-lg-4" >
+                                <div class="card">
+                                  <div class="card-body">
+                                    <img src="https://www.esenceweb.com/backend/uploads/angular-framework-tutorial-for-absolute-beginners.png" class="img-fluid img-thumbnail w-50">
+                                    <h5 class="card-title">ANGULAR</h5>
+                                    <p class="card-text">Angular is a platform for building mobile and desktop web applications. Join the community of millions of developers who build compelling user interfaces ...
+                                    </p>
+                                    <h3>RS 11999/-<div class="text-danger"><P>45%OFF</P></div></h3>
+                        
+                                    <a href="#" class="btn btn-primary">Buy Now</a>
+                                  </div>
+                              </div>
+                                </div>
+                                <div class="col-sm-12 col-md-4 col-lg-4" >
+                                  <div class="card">
+                                    <div class="card-body">
+                                      <img src="https://developers.redhat.com/sites/default/files/styles/article_feature/public/Python-01%20%282%29.png?itok=TEVIQBQo" class="img-fluid img-thumbnail w-50">
+                                      <h5 class="card-title">PYTHON</h5>
+                                      <p class="card-text">Python is a high-level, general-purpose programming language. Its design philosophy emphasizes code readability with the use of significant indentation.  </p>
+                                      <h3>RS 15999/-<div class="text-danger"><P> 5%OFF</P></div></h3>
+                        
+                                      <a href="#" class="btn btn-primary">Buy Now</a>
+                                    </div>
+                                    </div>
+                                </div>
+                                 <div class="col-sm-12 col-md-4 col-lg-4" >
+                                    <div class="card">
+                                      <div class="card-body">
+                                        <img src="https://engant.com/wp-content/uploads/2022/04/party-1024x576.png" class="img-fluid img-thumbnail w-50">
+                                        <h5 class="card-title">MACHINE LEARNING</h5>
+                                        <p class="card-text">Machine learning is an umbrella term for solving problems for which development of algorithms by human programmers would be cost-prohibitive.</p>
+                                        <h3>RS 14999/-<div class="text-danger"><P>25%OFF</P></div></h3>
+                        
+                                        <a href="#" class="btn btn-primary">Buy Now</a>
+                                      </div>
+                                  </div>
+                                    </div>
+                                    <div class="col-sm-12 col-md-4 col-lg-4" >
+                                      <div class="card">
+                                        <div class="card-body">
+                                          <img src="https://www.freecodecamp.org/news/content/images/2023/05/revised_node.png" class="img-fluid img-thumbnail w-50">
+                                          <h5 class="card-title">NODE.JS</h5>
+                                          <p class="card-text">Node.js is a cross-platform, open-source server environment that can run on Windows, Linux, Unix, macOS, and more. Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript engine, and executes JavaScript code outside a web browser.</p>
+                                          <h3>RS 9999/-<div class="text-danger"><P>15%OFF</P></div></h3>
+                        
+                                          <a href="#" class="btn btn-primary">Buy Now</a>
+                                        </div>
+                                    </div>
+                                      </div>
+                                      <div class="col-sm-12 col-md-4 col-lg-4" >
+                                        <div class="card">
+                                          <div class="card-body">
+                                            <img src="https://s40424.pcdn.co/in/wp-content/uploads/2022/10/What-is-M.Tech-in-Artificial-Intelligence_AI.jpg.optimal.jpg" class="img-fluid img-thumbnail w-50">
+                                            <h5 class="card-title">ARTIFICIAL INTELLEGENCE</h5>
+                                            <p class="card-text">What is artificial intelligence (AI)? Artificial intelligence is the simulation of human intelligence processes by machines, especially computer systems. Specific applications of AI include expert systems, natural language processing, speech recognition and machine vision.</p>
+                                            <h3>RS 15999/-<div class="text-danger"><P>15%OFF</P></div></h3>
+                        
+                                            <a href="#" class="btn btn-primary">Buy Now</a>
+                                          </div>
+                                      </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-4 col-lg-4" >
+                                          <div class="card">
+                                            <div class="card-body">
+                                              <img src="https://www.developer.com/wp-content/uploads/2022/12/java-programming-tutorials-tips.png" class="img-fluid img-thumbnail w-50">
+                                              <h5 class="card-title">JAVA</h5>
+                                              <p class="card-text">Java is a multi-platform, object-oriented, and network-centric language that can be used as a platform in itself. It is a fast, secure, reliable programming language for coding everything from mobile apps and enterprise software to big data applications and server-side technologies</p>
+                                              <h3>RS 14999/-<div class="text-danger"><P>25%OFF</P></div></h3>
+                        
+                                              <a href="#" class="btn btn-primary">Buy Now</a>
+                                            </div>
+                                        </div>
+                                          </div>
+                                         <div class="col-sm-12 col-md-4 col-lg-4" >
+                                          <div class="card">
+                                            <div class="card-body">
+                                              <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--2XdEnCAM--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://raw.githubusercontent.com/sandeepkumar17/td-dev.to/di-collection-posts/assets/blog-cover/c-sharp.png" class="img-fluid img-thumbnail w-50">
+                                              <h5 class="card-title">C#</h5>
+                                              <p class="card-text">C# is a general-purpose high-level programming language supporting multiple paradigms. C# encompasses static typing, strong typing, lexically scoped, imperative, declarative, functional, generic, object-oriented, and component-oriented programming disciplines.</p>
+                                              <h3>RS 8999/-<div class="text-danger"><P>5%OFF</P></div></h3>
+                        
+                                              <a href="#" class="btn btn-primary">Buy Now</a>
+                                            </div>
+                                        </div>
+                                          </div>
+                                          <div class="col-sm-12 col-md-4 col-lg-4" >
+                                            <div class="card">
+                                              <div class="card-body">
+                                                <img src="https://comxtech.com/wp-content/uploads/2018/07/web35.jpg" class="img-fluid img-thumbnail w-50">
+                                                <h5 class="card-title">.NET</h5>
+                                                <p class="card-text">.NET is a free, cross-platform, open source developer platform for building many different types of applications. With .NET, you can use multiple languages, ...
+                                                  Why choose .NET? · Programming Languages · Desktop apps · Game development</p>
+                                                  <h3>RS 11999/-<div class="text-danger"><P>15%OFF</P></div></h3>
+                        
+                                                <a href="#" class="btn btn-primary">Buy Now</a>
+                                              </div>
+                                          </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-4 col-lg-4" >
+                                              <div class="card">
+                                                <div class="card-body">
+                                                  <img src="https://blogs.dpuerp.in/images/blog/70/389-cyber-security.jpg" class="img-fluid img-thumbnail w-50">
+                                                  <h5 class="card-title">CYBER SECURITY</h5>
+                                                  <p class="card-text">Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. These cyberattacks are usually aimed at accessing, changing, or destroying sensitive information; extorting money from users via ransomware; or interrupting normal business processes.
+                                                    Cisco</p>
+                                                    <h3>RS 16999/-<div class="text-danger"><P>35%OFF</P></div></h3>
+                        
+                                                  <a href="#" class="btn btn-primary">Buy Now</a>
+                                                </div>
+                                            </div>
+                                              </div>
+                                              <div class="col-sm-12 col-md-4 col-lg-4" >
+                                                <div class="card">
+                                                  <div class="card-body">
+                                                    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--ouQLsaYd--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/himk93z9942zrhvj9arv.jpg" class="img-fluid img-thumbnail w-50">
+                                                    <h5 class="card-title">SQL</h5>
+                                                    <p class="card-text">What is SQL? SQL stands for Structured Query Language. SQL lets you access and manipulate databases. SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987.</p>
+                                                    <h3>RS 9999/-<div class="text-danger"><P>10%OFF</P></div></h3>
+                        
+                                                    <a href="#" class="btn btn-primary">Buy Now</a>
+                                                  </div>
+                                              </div>
+                                                </div>
+                                                <div class="col-sm-12 col-md-4 col-lg-4" >
+                                                  <div class="card">
+                                                    <div class="card-body">
+                                                      <img src="https://community-cdn-digitalocean-com.global.ssl.fastly.net/M1bswVs7zkuTaBacgsKxDCB4" class="img-fluid img-thumbnail w-50">
+                                                      <h5 class="card-title">MY SQL</h5>
+                                                      <p class="card-text">MySQL is an open-source relational database management system. Its name is a combination of "My", the name of co-founder Michael Widenius's daughter My, and "SQL", the acronym for Structured Query Language. </p>
+                                                      <h3>RS 11999/-<div class="text-danger"><P>10%OFF</P></div></h3>
+                        
+                                                      <a href="#" class="btn btn-primary">Buy Now</a>
+                                                    </div>
+                                                </div>
+                                                  </div>
+                                                  <div class="col-sm-12 col-md-4 col-lg-4" >
+                                                    <div class="card">
+                                                      <div class="card-body">
+                                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNBvBsCy_t50cItXmzgN6XeSBkLh9D2R00PS8l1qopbdV74ett8BNy07udi3bd8ealqfI&usqp=CAU" class="img-fluid img-thumbnail w-50">
+                                                        <h5 class="card-title">MONGO DB</h5>
+                                                        <p class="card-text">MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.</p>
+                                                        <h3>RS 13999/-<div class="text-danger"><P>5%OFF</P></div></h3>
+                        
+                                                        <a href="#" class="btn btn-primary">Buy Now</a>
+                                                      </div>
+                                                  </div>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-4 col-lg-4" >
+                                                      <div class="card">
+                                                        <div class="card-body">
+                                                          <img src="https://www.crossjoin.pt/wp-content/uploads/2019/08/ImagemArtigo-Site-1-1024x683.jpg" class="img-fluid img-thumbnail w-50">
+                                                          <h5 class="card-title">ORACLE</h5>
+                                                          <p class="card-text">Oracle Corporation is an American multinational computer technology company headquartered in Austin, Texas, United States. In 2020, Oracle was the third-largest software company in the world by revenue and market capitalization</p>
+                                                          <h3>RS 16999/-<div class="text-danger"><P>5%OFF</P></div></h3>
+                        
+                                                          <a href="#" class="btn btn-primary">Buy Now</a>
+                                                        </div>
+                                                    </div>
+                                                      </div>
+                                                      <div class="col-sm-12 col-md-4 col-lg-4" >
+                                                        <div class="card">
+                                                          <div class="card-body">
+                                                            <img src="https://redis.com/wp-content/uploads/2021/08/redis-social-1200x628-1.jpg" class="img-fluid img-thumbnail w-50">
+                                                            <h5 class="card-title">REDIS</h5>
+                                                            <p class="card-text">Redis offers a fast, in-memory data store to power live streaming use cases. Redis can be used to store metadata about users' profiles and viewing histories, authentication information/tokens for millions of users, and manifest files to enable CDNs to stream videos to millions of mobile and desktop users at a time.
+
+                                                            </p>
+                                                            <h3>RS 9999/-<div class="text-danger"><P>10%OFF</P></div></h3>
+                        
+                                                            <a href="#" class="btn btn-primary">Buy Now</a>
+                                                          </div>
+                                                      </div>
+                                                        </div>
+                                                        <div class="col-sm-12 col-md-4 col-lg-4" >
+                                                          <div class="card">
+                                                            <div class="card-body">
+                                                              <img src="https://miro.medium.com/v2/resize:fit:1200/1*CXiBVAzYL6g3MHWLDhT4BQ.jpeg" class="img-fluid img-thumbnail w-50">
+                                                              <h5 class="card-title">RUBY</h5>
+                                                              <p class="card-text">Ruby is an interpreted, high-level, general-purpose programming language which supports multiple programming paradigms. It was designed with an emphasis on programming productivity and simplicity. In Ruby, everything is an object, including primitive data types.</p>
+                                                              <h3>RS 13999/-<div class="text-danger"><P>5%OFF</P></div></h3>
+                        
+                                                              <a href="#" class="btn btn-primary">Buy Now</a>
+                                                            </div>
+                                                        </div>
+                                                          </div>
+                                                          
+                                                          <div class="col-sm-12 col-md-4 col-lg-4" >
+                                                            <div class="card">
+                                                              <div class="card-body">
+                                                                <img src="https://technogeekscs.com/wp-content/uploads/2022/04/perl-scripting-programming-training-1024x576.png" class="img-fluid img-thumbnail w-50">
+                                                                <h5 class="card-title">PERL</h5>
+                                                                <p class="card-text">One of the major application of Perl language is to processing of text files and analysis of the strings. Perl also used for CGI( Common Gateway Interface) scripts. Used in web development, GUI(Graphical User Interface) development. Perl's text-handling capabilities is also used for generating SQL queries</p>
+                                                                <h3>RS 12999/-<div class="text-danger"><P>5%OFF</P></div></h3>
+                                                                <a href="#" class="btn btn-primary">Buy Now</a>
+                                                              </div>
+                                                          </div>
+                                                            </div>
+                                                            <div class="col-sm-12 col-md-4 col-lg-4" >
+                                                              <div class="card">
+                                                                <div class="card-body">
+                                                                  <img src="https://nareshit.com/wp-content/uploads/2018/09/R-Programming-online-training-nareshit.jpg" class="img-fluid img-thumbnail w-50">
+                                                                  <h5 class="card-title">R Language</h5>
+                                                                  <p class="card-text">
+                                                                    R is a universal programming language compatible with the Windows, Macintosh, UNIX, and Linux platforms. It is often referred to as a different implementation of the S language and environment and is considered highly extensible.</p>
+                                                                    <h3>RS 11999/-<div class="text-danger"><P>5%OFF</P></div></h3>
+                                                                  <a href="#" class="btn btn-primary">Buy Now</a>
+                                                                </div>
+                                                            </div>
+                                                              </div>
+                                                              <div class="col-sm-12 col-md-4 col-lg-4" >
+                                                                <div class="card">
+                                                                  <div class="card-body">
+                                                                    <img src="https://1.bp.blogspot.com/-KnGVLo7U7gQ/Xx0E8Sh8KtI/AAAAAAAAhnE/THS8q3fq9zg3jWTQqFr2s0XuE_M4BABNQCLcBGAsYHQ/w1200-h630-p-k-no-nu/free%2BC%2BProgramming%2Bcourses%2Bfor%2Bbeginners.png" class="img-fluid img-thumbnail w-50">
+                                                                    <h5 class="card-title">C</h5>
+                                                                    <p class="card-text">C is a general-purpose computer programming language. It was created in the 1970s by Dennis Ritchie, and remains very widely used and influential. By design, C's features cleanly reflect the capabilities of the targeted CPUs.</p>
+                                                                    <h3>RS 7999/-<div class="text-danger"><P>5%OFF</P></div></h3>
+                        
+                                                                    <a href="#" class="btn btn-primary">Buy Now</a>
+                                                                  </div>
+                                                              </div>
+                                                                </div>
+                                                                
+                                                                <div class="col-sm-12 col-md-4 col-lg-4" >
+                                                                  <div class="card">
+                                                                    <div class="card-body">
+                                                                      <img src="https://www.analyticsinsight.net/wp-content/uploads/2022/03/bh1-1024x725-1.jpg" class="img-fluid img-thumbnail w-50">
+                                                                      <h5 class="card-title">C++</h5>
+                                                                      <p class="card-text">
+                                                                        C++ (or “C-plus-plus”) is a general-purpose programming and coding language. C++ is used in developing browsers, operating systems, and applications, as well as in-game programming, software engineering, data structures, etc.</p>
+                                                                        <h3>RS 8999/-<div class="text-danger"><P>5%OFF</P></div></h3>
+                        
+                                                                      <a href="#" class="btn btn-primary">Buy Now</a>
+                                                                    </div>
+                                                                </div>
+                                                                  </div>
+                                                                  <div class="col-sm-12 col-md-4 col-lg-4" >
+                                                                    <div class="card">
+                                                                      <div class="card-body">
+                                                                        <img src="https://miro.medium.com/v2/resize:fit:800/0*ZEPJsASfB2z7hi_0" class="img-fluid img-thumbnail w-50">
+                                                                        <h5 class="card-title">FULL STACK WEB DEVELOPMENT</h5>
+                                                                        <p class="card-text">
+                                                                          Full stack development is the process of designing, creating, testing, and deploying a complete web application from start to finish. It involves working with various technologies and tools, including front-end web development, back-end web development, and database development.</p>
+                                                                          <h3>RS 17999/-<div class="text-danger"><P>5%OFF</P></div></h3>
+                        
+                                                                        <a href="#" class="btn btn-primary">Buy Now</a>
+                                                                      </div>
+                                                                  </div>
+                                                                    </div>
+                                                                    <div class="col-sm-12 col-md-4 col-lg-4" >
+                                                                      <div class="card">
+                                                                        <div class="card-body">
+                                                                          <img src="https://ashokitech.com/uploads/course/java-fullstack-development-online-training.jpeg" class="img-fluid img-thumbnail w-50">
+                                                                          <h5 class="card-title">JAVA FULL STACK DEVELOPMENT</h5>
+                                                                          <p class="card-text">
+                                                                            Java full-stack refers to web developers that use Java to develop the entire technology. This means they use Javascript for front-end programming and Java for back-end programming. There are many steps to web development and many tools that go along with each step.</p>
+                                                                            <h3>RS 17999/-<div class="text-danger"><P>15%OFF</P></div></h3>
+                        
+                                                                          <a href="#" class="btn btn-primary">Buy Now</a>
+                                                                        </div>
+                                                                    </div>
+                                                                      </div>
+                      </div>
+                    </div>
+              </section>
+              <section class="Our Team py-5 " id="Our Team">
+                <div class="container  ">
+                  <div class="text-center my-5" >
+                      <h1>Our <span class="text-primary">Team</span> </h1>
+                      <hr  class="w-25 m-auto"> 
+                      </div>
+                      <div class="row" data-aos="fade-zoom-down" data-fade-offset="200">
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                          <div class="card-body ">
+                            <img src="https://tse2.mm.bing.net/th?id=OIP.KgOmk5R_-WY8rnWc9Ke9LwHaHa&pid=Api&P=0&h=180"class="img-fluid rounded-circle border border-primary p-2">
+                            <h5 class="card-title">Shradha Khapra</h5>
+                            <p class="card-text mt-4">Front-End-developer</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                          </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                          <div class="card-body">
+                            <img src="https://replit.com/public/images/code-with-harry-100-doc/harry.png" class="img-fluid rounded-circle border border-primary p-2">
+                            <h5 class="card-title mt-4">Haris Ali Khan</h5>
+                            <p class="card-text">Web-Developer</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                          </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-12">
+                          <div class="card-body">
+                            <img src="https://yt3.ggpht.com/ytc/AKedOLRLiaa4P2JkseBtgCkK5V-RbkQGwBTWzl824553=s900-c-k-c0x00ffffff-no-rj" class="img-fluid rounded-circle border border-primary p-2">
+                            <h5 class="card-title mt-4">Anju</h5>
+                            <p class="card-text">Ex Softwaree Engineer at Amazon</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                          </div>
+                        </div>
+                      
+                      </div>
+
+              </section>
+              <section class="Contact Us py-5"id="Contact Us">
+                <div class="container">
+                  <div class="text-center my-5">
+                      <h1> Feel Free to<span class="text-primary"> Contact Us</span> </h1>
+                      <hr  class="w-25 m-auto"> 
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-6 col-12" data-aos="fade-up-left" data-fade-offset="200">
+                          <form class="row g-3">
+                            <div class="col-md-6">
+                              <label for="inputEmail4" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="col-md-6">
+                              <label for="inputPassword4" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="col-12">
+                              <label for="inputAddress" class="form-label">Address</label>
+                              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            </div>
+                           
+                            <div class="col-md-6">
+                              <label for="inputCity" class="form-label">City</label>
+                              <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="col-md-4">
+                              <label for="inputState" class="form-label">State</label>
+                              <select id="inputState" class="form-select">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                              </select>
+                            </div>
+                            <div class="col-md-2">
+                              <label for="inputZip" class="form-label">Zip</label>
+                              <input type="text" class="form-control" id="inputZip">
+                            </div>
+                            <div class="col-12">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                  Check me out
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <button type="submit" class="btn btn-primary">Sign in</button>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6 col-12 m-auto text-end p-4" data-aos="fade-up-right" data-fade-offset="200">
+                          <img src="https://static10.tgstat.ru/channels/_0/45/455a38331700a2c6bce5afae3df14947.jpg"class="img-fluid img-thumbnail p-2">
+                        </div>
+                      </div>
+                      </div>
+
+              </section>
+              <div class="container-fluid bg-primary text-whhite p-2 text-center fs-4">Developed by Bhavani</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+              
+</body>
+</html>
